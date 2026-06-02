@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In | Employee Management System</title>
+    <link rel="stylesheet" href="css/login.css">
+</head>
+<body>
+    <div class="page">
+        <div class="card">
+            <div class="brand">
+                <div class="logo">EMS</div>
+                <h1>Welcome back</h1>
+                <p class="subtitle">Sign in to manage employees</p>
+            </div>
+
+            <div id="errorBox" class="alert alert-error" role="alert" hidden>
+                Invalid username, password, or mail ID. Use the demo credentials below.
+            </div>
+
+            <form class="login-form" action="login" method="post" novalidate>
+                <div class="field">
+                    <label for="username">Username</label>
+                    <input
+                        type="text"
+                        id="username"
+                        name="username"
+                        placeholder="admin"
+                        value="admin"
+                        autocomplete="username"
+                        required
+                        minlength="3"
+                        maxlength="50">
+                </div>
+
+                <div class="field">
+                    <label for="password">Password</label>
+                    <input
+                        type="password"
+                        id="password"
+                        name="password"
+                        placeholder="admin123"
+                        value="admin123"
+                        autocomplete="current-password"
+                        required
+                        minlength="4"
+                        maxlength="100">
+                </div>
+
+                <div class="field">
+                    <label for="email">Mail ID</label>
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        placeholder="admin@gmail.com"
+                        value="admin@gmail.com"
+                        autocomplete="email"
+                        required>
+                </div>
+
+                <button type="submit" class="btn-primary">Sign In</button>
+            </form>
+
+            <p class="hint"><strong>Demo login</strong></p>
+            <p class="hint">Username: admin &nbsp;|&nbsp; Password: admin123 &nbsp;|&nbsp; Mail ID: admin@gmail.com</p>
+        </div>
+    </div>
+
+    <script>
+        if (new URLSearchParams(window.location.search).get('error') === '1') {
+            document.getElementById('errorBox').hidden = false;
+        }
+    </script>
+</body>
+</html>
