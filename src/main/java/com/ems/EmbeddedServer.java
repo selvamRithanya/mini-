@@ -24,7 +24,7 @@ import jakarta.servlet.DispatcherType;
  */
 public class EmbeddedServer {
 
-    private static final int PORT = 8082;
+    private static final int PORT = 8083;
 
     public static void main(String[] args) throws Exception {
         String projectDir = System.getProperty("user.dir");

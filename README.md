@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Employee Management System
 
 Web login and console employee management built with **Java**, **JDBC**, **MySQL**, and **HTML**.
@@ -103,3 +104,6 @@ sql/schema.sql
 | Access    | JDBC                    |
 | Server    | Jetty (Maven plugin)    |
 | Build     | Maven                   |
+=======
+# mini-
+>>>>>>> 72d9d9f280fced7a5b06e0b7ab340606c32c1422

@@ -4,7 +4,7 @@ cd /d "%~dp0"
 
 echo ============================================
 echo  Employee Management System
-echo  http://localhost:8082
+echo  http://localhost:8083
 echo ============================================
 echo.
 
@@ -15,8 +15,8 @@ set "CP=target\classes;lib\*"
 
 echo.
 echo Starting server...
-echo   Login:        http://localhost:8082/login.html
-echo   Employees:    http://localhost:8082/employees/
+echo   Login:        http://localhost:8083/login.html
+echo   Employees:    http://localhost:8083/employees/
 echo.
 echo   Press Ctrl+C to stop.
 echo.
